@@ -18,7 +18,7 @@
   <project name="poky" remote="yocto" revision="warrior" path="sources/poky"/>
   <project name="meta-openembedded" remote="oe" revision="warrior" path="sources/meta-openembedded"/>
   <project name="meta-raspberrypi" remote="rpi" revision="warrior" path="sources/meta-raspberrypi"/>
-  <project name="meta-laird-cp" remote="laird" revision="lrd-7.0.0.x" path="source/meta-laird-cp"/>
-  <project name="meta-kalfire" remote="kalfire" revision="warrior" path="source/meta-kalfire"/>
+  <project name="meta-laird-cp" remote="laird" revision="lrd-7.0.0.x" path="sources/meta-laird-cp"/>
+  <project name="meta-kalfire" remote="kalfire" revision="warrior" path="sources/meta-kalfire"/>
 
 </manifest>
