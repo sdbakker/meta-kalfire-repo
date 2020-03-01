@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <default sync-j="4" revision="warrior"/>
+
+  <remote fetch="https://github.com/mendersoftware" name="mender"/>
+  <remote fetch="https://git.yoctoproject.org/git" name="yocto"/>
+  <remote fetch="https://github.com/openembedded"  name="oe"/>
+  <remote fetch="https://github.com/agherzan"      name="rpi"/>
+  <remote fetch="https://github.com/LairdCP"       name="laird" />
+  <remote fetch="https://github.com/sdbakker"       name="kalfire" />
+  
+  <project name="meta-mender" remote="mender" revision="warrior" path="sources/meta-mender"/>
+  <project name="meta-mender-community" remote="mender" revision="warrior" path="sources/meta-mender-community">
+    <copyfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
+
+  <project name="poky" remote="yocto" revision="warrior" path="sources/poky"/>
+  <project name="meta-openembedded" remote="oe" revision="warrior" path="sources/meta-openembedded"/>
+  <project name="meta-raspberrypi" remote="rpi" revision="warrior" path="sources/meta-raspberrypi"/>
+  <project name="meta-laird-cp" remote="laird" revision="lrd-7.0.0.x" path="source/meta-laird-cp"/>
+  <project name="meta-kalfire" remote="kalfire" revision="warrior" path="source/meta-kalfire"/>
+
+</manifest>
