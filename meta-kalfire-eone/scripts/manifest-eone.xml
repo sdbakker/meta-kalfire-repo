@@ -10,7 +10,7 @@
   <remote fetch="https://github.com/LairdCP"       name="laird" />
   
   <project name="meta-mender" remote="mender" revision="warrior" path="sources/meta-mender"/>
-  <project name="meta-mender-community" remote="mender" revision="warrior" path="sources/meta-mender-community"\>
+  <project name="meta-mender-community" remote="mender" revision="warrior" path="sources/meta-mender-community"/>
 
   <project name="poky" remote="yocto" revision="warrior" path="sources/poky"/>
   <project name="meta-openembedded" remote="oe" revision="warrior" path="sources/meta-openembedded"/>
