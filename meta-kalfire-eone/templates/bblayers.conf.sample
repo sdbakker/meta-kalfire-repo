@@ -18,5 +18,4 @@ BBLAYERS ?= " \
   ${TOPDIR}/../sources/meta-mender/meta-mender-raspberrypi \
   ${TOPDIR}/../sources/meta-kalfire \
   ${TOPDIR}/../sources/meta-laird-cp \
-  /home/simon/dev/toolchains/yocto/kalfire-mender/build/workspace \
   "
