@@ -8,7 +8,7 @@
   <remote fetch="https://github.com/openembedded"  name="oe"/>
   <remote fetch="https://github.com/agherzan"      name="rpi"/>
   <remote fetch="https://github.com/LairdCP"       name="laird" />
-  <remote fetch="https://github.com/sdbakker"       name="kalfire" />
+  <remote fetch="git@github.com:sdbakker"       name="kalfire" />
   
   <project name="meta-mender" remote="mender" revision="warrior" path="sources/meta-mender"/>
   <project name="meta-mender-community" remote="mender" revision="warrior" path="sources/meta-mender-community">
