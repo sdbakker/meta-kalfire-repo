@@ -5,7 +5,7 @@
   <remote fetch="https://github.com/sdbakker"       name="kalfire" />
 
   <project name="meta-kalfire" remote="kalfire" revision="warrior" path="sources/meta-kalfire"/>
-  <project name="meta-kalfire-repo" remote="kalfire" revision="warrior" path="sources/meta-kalfire-repo"/>
+  <project name="meta-kalfire-repo" remote="kalfire" revision="warrior" path="sources/meta-kalfire-repo">
     <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
 </manifest>
