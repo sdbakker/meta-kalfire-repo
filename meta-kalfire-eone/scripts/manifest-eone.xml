@@ -12,7 +12,7 @@
   <project name="meta-mender" remote="mender" revision="d4ffaf07f242a009ce919c4191442e5ff7277b37" path="sources/meta-mender"/>
   <project name="meta-mender-community" remote="mender" revision="f524d9de4e806abe3e24346230241bb0d16bcf54" path="sources/meta-mender-community"/>
 
-  <project name="poky" remote="yocto" revision="i023ff85a9ae94331926e923b346fd8a349881e63" path="sources/poky"/>
+  <project name="poky" remote="yocto" revision="023ff85a9ae94331926e923b346fd8a349881e63" path="sources/poky"/>
   <project name="meta-openembedded" remote="oe" revision="a24acf94d48d635eca668ea34598c6e5c857e3f8" path="sources/meta-openembedded"/>
   <project name="meta-raspberrypi" remote="rpi" revision="2f0fa9a087b9ded28797d3087ccfa8f48bf5dd13" path="sources/meta-raspberrypi"/>
   <project name="meta-laird-cp" remote="laird" revision="ea99e3de18501f030316d2cdeec4b3af62798509" path="sources/meta-laird-cp"/>
