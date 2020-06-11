@@ -11,7 +11,7 @@ This is an addition on the meta-mender-community build integration for simplifyi
     $ repo init \
            -u https://github.com/sdbakker/meta-kalfire-repo \
            -m meta-kalfire-<type>/scripts/manifest-<type>.xml \
-           -b warrior
+           -b eone-v2.0
     $ repo sync
 ```
 
