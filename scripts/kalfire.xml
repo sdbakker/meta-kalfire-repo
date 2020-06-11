@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="warrior"/>
+  <default sync-j="4" revision="eone-v2.0"/>
 
-  <remote fetch="git@github.com:sdbakker"       name="kalfire" />
+  <remote fetch="ssh://git@github.com/sdbakker/"       name="kalfire" />
 
   <project name="meta-kalfire" remote="kalfire" revision="add2d09e00b872d95bde9fdfd2de5f7e97e7b769" path="sources/meta-kalfire"/>
   <project name="meta-kalfire-repo" remote="kalfire" revision="eone-v2.0" path="sources/meta-kalfire-repo">
