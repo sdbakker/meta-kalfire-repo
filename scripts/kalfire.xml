@@ -4,7 +4,7 @@
 
   <remote fetch="ssh://git@github.com/sdbakker/" name="kalfire" />
 
-  <project name="meta-kalfire" remote="kalfire" revision="40b37cf0a7073a9b398f4cb39a248e432e1c6f64" path="sources/meta-kalfire"/>
+  <project name="meta-kalfire" remote="kalfire" revision="3da88a52ae3c9cc86bcdfb905c24d28aaba966f0" path="sources/meta-kalfire"/>
   <project name="meta-kalfire-repo" remote="kalfire" revision="eone-v2.0" path="sources/meta-kalfire-repo">
     <copyfile dest="setup-environment" src="scripts/setup-environment"/>
   </project>
