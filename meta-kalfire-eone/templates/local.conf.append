@@ -11,7 +11,7 @@ DISABLE_RPI_BOOT_LOGO = "1"
 DISABLE_OVERSCAN = "1"
 DISABLE_SPLASH = "1"
 DISABLE_VC4GRAPHICS = "1"
-DISTRO_FEATURES_remove = "x11 opengl wayland vulkan"
+DISTRO_FEATURES_remove = "x11 opengl wayland vulkan mender-growfs-data"
 
 RPI_USE_U_BOOT = "1"
 IMAGE_INSTALL_append = " kernel-image kernel-devicetree"
