@@ -44,7 +44,8 @@ target_scripts=${kalfire_repo_dir}/meta-kalfire-${target}/scripts
 . ${script_dir}/sources/poky/oe-init-build-env ${build_dir}
 
 if [ ! -f ${build_dir}/conf/kalfire_complete ]; then
-    # Common entries for Mender
+    # copy kalfire configuration
+    cp ${script_dir}/sources/meta_kalfire/conf/local.conf.sample ${build_dir}/conf/local.conf
     cat ${kalfire_repo_dir}/templates/local.conf.append >> ${build_dir}/conf/local.conf
 
     # Board specific entries
