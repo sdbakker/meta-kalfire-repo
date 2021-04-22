@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Inspired by "probe" in oe-init-build-env
 if [ -n "$BASH_SOURCE" ]; then
@@ -39,18 +39,22 @@ if [ -z "${target}" ]; then
 fi
 
 target_templates=${kalfire_repo_dir}/meta-kalfire-${target}/templates
+target_scripts=${kalfire_repo_dir}/meta-kalfire-${target}/scripts
 
 . ${script_dir}/sources/poky/oe-init-build-env ${build_dir}
 
-if [ -f ${build_dir}/conf/kalfire_complete ]; then
-    return 1
+if [ ! -f ${build_dir}/conf/kalfire_complete ]; then
+    # copy kalfire configuration
+    cp ${script_dir}/sources/meta-kalfire/conf/local.conf.sample ${build_dir}/conf/local.conf
+    cat ${kalfire_repo_dir}/templates/local.conf.append >> ${build_dir}/conf/local.conf
+
+    # Board specific entries
+    cp ${target_templates}/bblayers.conf.sample ${build_dir}/conf/bblayers.conf
+    cat ${target_templates}/local.conf.append >> ${build_dir}/conf/local.conf
+
+    if [ -f "${target_scripts}/finish_install.sh" ]; then
+        ${target_scripts}/finish_install.sh ${build_dir}
+    fi
+
+    touch ${build_dir}/conf/kalfire_complete
 fi
-
-# Common entries for Mender
-cat ${kalfire_repo_dir}/templates/local.conf.append >> ${build_dir}/conf/local.conf
-
-# Board specific entries
-cp ${target_templates}/bblayers.conf.sample ${build_dir}/conf/bblayers.conf
-cat ${target_templates}/local.conf.append >> ${build_dir}/conf/local.conf
-
-touch ${build_dir}/conf/kalfire_complete
