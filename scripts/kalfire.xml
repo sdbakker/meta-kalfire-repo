@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <default sync-j="4" revision="eone-v2.1.3"/>
+
+  <remote fetch="ssh://git@github.com/sdbakker/" name="kalfire" />
+
+  <project name="meta-kalfire" remote="kalfire" revision="rel/2.1.3" path="sources/meta-kalfire"/>
+  <project name="meta-kalfire-repo" remote="kalfire" revision="eone-v2.1.3" path="sources/meta-kalfire-repo">
+    <copyfile dest="setup-environment" src="scripts/setup-environment"/>
+  </project>
+</manifest>
