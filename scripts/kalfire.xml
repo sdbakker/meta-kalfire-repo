@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <default sync-j="4" revision="eone-v2.2.0-staging"/>
+  <default sync-j="4" revision="staging/eone-v2.2.0"/>
 
   <remote fetch="ssh://git@github.com/sdbakker/" name="kalfire" />
 
