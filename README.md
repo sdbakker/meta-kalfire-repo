@@ -6,12 +6,12 @@ This is an addition on the meta-mender-community build integration for simplifyi
 1. Download the source:
 
 ```
-    $ mkdir kalfire-eone-v2.2.0-staging
-    $ cd kalfire-eone-v2.2.0-staging
+    $ mkdir kalfire-eone-v2.2.0
+    $ cd kalfire-eone-v2.2.0
     $ repo init \
            -u https://github.com/sdbakker/meta-kalfire-repo \
            -m meta-kalfire-eone/scripts/manifest-eone.xml \
-           -b staging/eone-v2.2.0
+           -b eone-v2.2.0
     $ repo sync
 ```
 
